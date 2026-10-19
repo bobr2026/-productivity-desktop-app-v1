@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title> Admin_app окно добовления нового скрипта</title>
+</head>
+<body>
+    <div class="input_div">
+
+        <input type="text" placeholder="интерпритатор"  required id="interpretator_script_input">
+        <input type="text" placeholder="Название скрита"  required id="name_script_input">
+        <input type="text" id="path_script_input" placeholder="путь донего">
+        <input type="text" id="script_hotkey_input" placeholder="камбинация для запуска">
+    </div> <input type="checkbox" id="myCheckbox" name="agreement">
+    <select class="menu_category" id="menu_category">
+          </select>
+     <button class="header_btn"  id="button_ok" >Дабавить</button>
+     <!-- <button class="header_btn" onclick="clearAppsAndSettings()">Почистить список </button> -->
+     
+     <div class="add_new_category">
+
+          <p>Группы папок</p>
+             <input type="text" class="input_title_category" id="input_title_category">
+            <button class="btn_add_notes" id="btn_add_category">Дабавить</button>
+        </div>
+    </body>
+<script src="../js/add_new_sripts.js"></script>
+</html>

@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+  border-radius: 25px;
+  
+  background-color: rgb(150, 174, 185);
+}
+.title_bar{
+  top: 0;
+  left: 0;
+  height: 30px;
+ width: 45px;
+ background-color: aquamarine;
+ position: absolute;
+ -webkit-app-region:drag;
+}
+.grub_fplder_btn img:hover{
+  width: 120px;
+  height: 120px;
+
+}
+.grub_fplder_btn{
+    margin-top:10px ;
+    margin-bottom:-10px ;
+
+}
+.modal_folder_name_disp{
+  position: absolute;
+top: 0;
+  margin-inline: 300px;
+  width: 200px;
+  height: 20px;
+  background-color: rgb(194, 194, 194);
+}
+.modal_folder_name{
+  display: none;
+}
+header{
+  margin-bottom: 5px;
+}
+.main_conteiner{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.left_grub{
+  grid-column: 1/6;
+}
+.notes_conteiner{
+  grid-column: 6/13;
+border-left: 1px solid snow;
+height: 100vh;
+}
+.textarea_content_notes{
+  width:650px ;
+  height: 400px;
+  /* resize: none; */
+  font-size: 18px;
+    /* background-color: rgb(68, 71, 82); */
+ background-color: rgba(77, 81, 92, 0.589);
+  color: rgb(255, 255, 255);
+  
+}
+.note_element{
+ display: flex;
+ flex-direction: column;
+     background-color: rgba(77, 81, 92, 0.589);
+
+  color: rgb(255, 255, 255);
+
+  margin-top: 10px;
+
+  text-overflow: ellipsis;
+   /* white-space:wrap; Запрещаем перенос строк */
+    max-height: 200px;
+  /* -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden!important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6; */
+
+
+}
+.note_title{
+ border-bottom: 1px solid rgb(92, 90, 88);
+}
+.note_data_updated{
+ border-bottom: 1px solid rgb(92, 90, 88);
+}
+.note_data_created{
+ border-bottom: 1px solid rgb(92, 90, 88);
+}
+.note_title_div{
+  display: flex;
+  justify-content: space-between;
+ 
+  margin-bottom: 5px;
+}
+.note_content{
+    margin-top: 5px;
+}
+
+/* .note_element:hover{
+  text-overflow:visible;
+   max-height: 500px;
+    
+} */
+/* .notes_header{
+  top: 0;
+  margin: 0;
+} */

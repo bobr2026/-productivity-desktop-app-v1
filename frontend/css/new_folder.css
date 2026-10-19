@@ -1,0 +1,15 @@
+.icon_folder{
+    width: 50px;
+    height: 50px;
+}
+.icon_folder:hover{
+width: 70px;
+height: 70px;
+}
+.secected_icon_folser{
+    display: block;
+    font-size: 20px;
+}
+#selected_folder_gryb{
+    font-size: 20px;
+}

@@ -1,0 +1,58 @@
+{
+  "name": "admin-app_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "build": {
+    "appId": "com.example.admin-app",
+    "productName": "admin-app",
+    "copyright": "Copyright © 2025 by Rusel",
+   
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "asar": true,
+    "files": [
+      "backend/**/*",
+      "frontend/**/*",
+      "node_modules/**/*",
+      "folder_icons/**/*",
+      "servis/**/*",
+      "index.js",
+      "trayTemplate-2x.png"
+   
+    ]
+  },
+  "extraResources": [
+    {
+      "from": "backend",
+      "to": "backend"
+    }
+  ],
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "rebuild": "electron-rebuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "commonjs",
+  "dependencies": {
+    "admin-app_js": "file:",
+    "better-sqlite3": "^11.10.0",
+    "node-notifier": "^10.0.1",
+    "open": "^10.1.0",
+    "screenshot-desktop": "^1.15.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+   
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-rebuild": "^3.2.9"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title> Admin_app окно добовления нового прилажения</title>
+</head>
+<body>
+    <div class="input_div">
+
+        <input type="text" placeholder="Название прилажения"  required id="app_name_input">
+        <input type="text" placeholder="путь до него"  required id="app_path_input">
+        <input type="text" id="app_hotkey_input" placeholder="камбинация для запуска">
+        <select class="menu_category" id="menu_category">
+           </select>
+    </div>
+     <!-- <input type="checkbox" id="myCheckbox" name="agreement"> -->
+     <button class="header_btn"  id="button_ok" >Дабавить</button>
+    
+
+      <div class="add_new_category">
+
+          <p>Группы прилажении </p>
+             <input type="text" class="input_title_category" id="input_title_category">
+            <button class="btn_add_notes" id="btn_add_category">Дабавить</button>
+        </div>
+     <!-- <div class="token_div">
+         <p>Токен</p>
+ <input type="text" placeholder="Токен тг бота " class="token_input" id="token_input">
+ <button class="set_token_button" id="set_token_button">Устоновить токен</button>
+     </div> -->
+    </body>
+<script src="../js/add_new_app.js"></script>
+</html>
